@@ -4,7 +4,6 @@ import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.AdapterView
 import android.widget.EditText
@@ -75,18 +74,10 @@ class MainActivity : AppCompatActivity() {
             var etChuyenNganh: EditText = dialogLayuot.findViewById(R.id.etChuyenNganh)
             var etHe: EditText = dialogLayuot.findViewById(R.id.etHe)
 
-            //check phone number
-            var checkPhone = false
-            mangSinhVien.forEach {
-                if (it.soDienThoai != etPhone.toString()) {
-                    checkPhone = true
-                }
-            }
-
             with(buidle) {
                 setTitle("Thêm sinh Viên")
                 setPositiveButton("OK") { dialog, which ->
-                    if (etChuyenNganh.text.isNotEmpty() && etNamSinh.text.isNotEmpty() && checkPhone == false) {
+                    if (etChuyenNganh.text.isNotEmpty() && etNamSinh.text.isNotEmpty()) {
                         mangSinhVien.add(
                             SinhVien(
                                 etName.text.toString(),
@@ -148,4 +139,5 @@ class MainActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
+
 }
