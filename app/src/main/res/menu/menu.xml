@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:title="seachView"
         android:icon="@mipmap/ic_launcher"
         app:showAsAction="ifRoom"
-        android:id="@+id/etsearch"
+        android:id="@+id/search"
         ></item>
     <item
         android:id="@+id/option"
@@ -32,6 +33,10 @@
             <item
                 android:id="@+id/action5"
                 android:title="Đại học"
+                ></item>
+            <item
+                android:id="@+id/action6"
+                android:title="All"
                 ></item>
         </menu>
     </item>

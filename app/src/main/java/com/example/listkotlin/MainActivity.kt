@@ -12,7 +12,6 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.collections.ArrayList
 import kotlin.Boolean as Boolean1
 
 
@@ -135,9 +134,24 @@ class MainActivity : AppCompatActivity() {
             mangSinhVientwo.addAll(sortedPhone)
             lvDanhSach.invalidateViews()
         } else if (id == R.id.action4) {
-
+            mangSinhVientwo.clear()
+            for (itemUniversity in mangSinhVien) {
+                if (itemUniversity.he == "Caodang") {
+                    mangSinhVientwo.add(itemUniversity)
+                }
+            }
+            lvDanhSach.invalidateViews()
         } else if (id == R.id.action5) {
-
+            mangSinhVientwo.clear()
+            for (itemUniversity in mangSinhVien) {
+                if (itemUniversity.he == "Daihoc") {
+                    mangSinhVientwo.add(itemUniversity)
+                }
+            }
+            lvDanhSach.invalidateViews()
+        } else if (id == R.id.action6) {
+            mangSinhVientwo.addAll(mangSinhVien)
+            lvDanhSach.invalidateViews()
         }
 
         return super.onOptionsItemSelected(item)
