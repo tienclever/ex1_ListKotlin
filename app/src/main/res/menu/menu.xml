@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom"
+        android:id="@+id/etsearch"
+        ></item>
+    <item
+        android:id="@+id/option"
+        android:title="option"
+        app:showAsAction="ifRoom"
+        >
+        <menu>
+            <item
+            android:id="@+id/action1"
+            android:title="Sắp Xếp theo tên"
+            ></item>
+            <item
+                android:id="@+id/action2"
+                android:title="Sắp Xếp theo năm sinh"
+                ></item>
+            <item
+                android:id="@+id/action3"
+                android:title="Sắp Xếp theo số điện thoại"
+                ></item>
+            <item
+                android:id="@+id/action4"
+                android:title="Cao đẳng"
+                ></item>
+            <item
+                android:id="@+id/action5"
+                android:title="Đại học"
+                ></item>
+        </menu>
+    </item>
+</menu>

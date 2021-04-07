@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_marginLeft="20sp"
+        android:text="ten"
+        android:id="@+id/tvTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@+id/tvTen"
+        android:text="SDT"
+        android:id="@+id/tvSoDienThoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@+id/tvSoDienThoai"
+        android:text="he"
+        android:id="@+id/tvHe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tvHe"
+        android:text="tvNamSinh"
+        android:id="@+id/tvNamSinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tvNamSinh"
+        android:text="tvNganh"
+        android:id="@+id/tvNganh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

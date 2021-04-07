@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DS Sinh Vien</string>
+
+    <string-array name="TrinhDo">
+        <item>Đại học</item>
+        <item>Cao đẳng</item>
+    </string-array>
+</resources>
