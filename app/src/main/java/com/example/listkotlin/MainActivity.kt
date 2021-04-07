@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
         DeleteItemList()
         EditItemList()
         searchView()
+        listSort()
+    }
+
+    private fun listSort() {
     }
 
     private fun searchView() {
